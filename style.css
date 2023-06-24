@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left, #283593, #1976d2);
+    user-select: none !important;
+}
+.card{
+    padding: 1rem;
+    width: 25rem;
+    height: 15rem;
+    border-radius: 15px;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    cursor: pointer;
+    transition:all 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+    perspective: 1000px;
+}
+.card .card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5rem 2rem;
+}
+.card .card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5rem 2rem;
+}
+.card-header .logo{
+    width: 60px;
+    height: 20px;
+    overflow: hidden;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2.5rem 2rem;
+}
+.card-body pre{
+    font-size: 20px;
+}
+.card-footer .title{
+    font-size: 8px;
+    font-weight: normal;
+    color: lightgray;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.card-front{
+  backface-visibility: hidden;
+}
