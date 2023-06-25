@@ -33,8 +33,25 @@
                 <div class="exp-date">09/15</div>
             </div>
         </div>
-    </div>
+        </div>
+
+        <div class="card-back">
+            <div class="card-back-title">For customer service , call +91-1234567890</div>
+            <div class="card-back-header">
+            </div>
+            <div class="card-back-body">
+                <div class="bar"></div>
+                <p>1234</p>
+            </div>
+            <div class="card-back-footer">
+                <p>Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, eum. sit amet consectetur adipisicing elit. Tempore, ut?</p>
+            </div>
+        </div>
     </div>
 
+    <script>
+        let card=document.querySelector(".card");
+        card.addEventListener("click",()=>card.classList.toggle("flip"));
+    </script>
 </body>
 </html>
