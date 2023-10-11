@@ -11,7 +11,7 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to left, #932828, #d21919);
+    background: lightcoral;
     -webkit-user-select: none;
     user-select: none;
     perspective: 1000px;
